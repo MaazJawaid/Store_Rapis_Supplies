@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* For Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+    height: 8px; /* Height of the scrollbar for horizontal scrolling */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #c1c1c1; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-track {
+    background: #f5f5f5; /* Color of the scrollbar track */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin; /* Use a thin scrollbar */
+    scrollbar-color: #c1c1c1 #f5f5f5; /* thumb color, track color */
+}
+
+/* Optional: Add some styling for the hover state */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a1a1a1; /* Darker color on hover */
+}
